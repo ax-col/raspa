@@ -30,7 +30,8 @@ body {
 .desc {
   margin-bottom: 25px;
   font-style: italic;
-  color: #ccc;
+  color: aqua; /* Color de letra */
+  font-size: 20px; /* Tamaño de letra */
 }
 
 /* Estilos del cursor épico */
