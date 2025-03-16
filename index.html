@@ -3,8 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>R A S P A ?</title>
-  <link rel="manifest" href="/manifest.json"> <!-- Manifest de Favicon -->
-  <link rel="icon" href="/raspa/favicon.ico" type="image/x-icon"> <!-- Favicon -->
   <link rel="stylesheet" href="styles.css"> <!-- Enlaza el archivo CSS -->
 
   <!-- Iconos para Apple Touch (usados en dispositivos Apple) -->
@@ -70,6 +68,9 @@
     <p class="desc">Resolver trabajos</p>
     <a class="btn" href="https://www.claude.ai/chats" target="_blank">Claude</a>
 
+    <p class="desc">Auido y Video AI</p>
+    <a class="btn" href="https://invideo.io/" target="_blank">Invideo (Video AI)</a>
+
     <p class="desc">Para crear presentaciones</p>
     <a class="btn" href="https://gamma.app/" target="_blank">Gamma (Presentaciones)</a>
     <a class="btn" href="https://slidesgo.com/es/" target="_blank">Slidesgo (Presentaciones)</a>
@@ -93,7 +94,7 @@
   <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/raspa/sw.js')
+      navigator.serviceWorker.register('/sw.js')
         .then((registration) => {
           console.log('ServiceWorker registrado con éxito: ', registration.scope);
         })
