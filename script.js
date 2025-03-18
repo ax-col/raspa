@@ -1,3 +1,12 @@
+const toggleBtn = document.getElementById('toggle-btn');
+        const toggleIcon = document.getElementById('toggle-icon');
+        const dropdownContent = document.getElementById('dropdown-content');
+        
+        toggleBtn.addEventListener('click', () => {
+            toggleIcon.classList.toggle('active');
+            dropdownContent.classList.toggle('active');
+        });
+
 const cursor = document.querySelector('.cursor');
 
 // Posicionar el cursor en el centro al cargar la página
