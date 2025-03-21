@@ -124,7 +124,7 @@
 
 <!-- Banner de contador -->
 <div id="contador-regresivo" class="contador-banner">
-  <p>Esta página se desactivará en:</p>
+  <p>Esta página dejara de estar disponible en</p>
   <p id="tiempo-restante"></p>
 </div>
 
@@ -145,7 +145,7 @@
     document.getElementById('contador-regresivo').style.display = 'none';
     document.getElementById('mensaje-redireccion').style.display = 'block';
     document.body.style.overflow = 'hidden'; // evita scroll en fondo
-    localStorage.setItem('paginaExpirada', 'false');
+    localStorage.setItem('paginaExpirada', 'true');
   };
 
   if (yaExpirado === 'true' || ahora >= fechaLimite) {
