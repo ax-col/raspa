@@ -145,7 +145,7 @@
     document.getElementById('contador-regresivo').style.display = 'none';
     document.getElementById('mensaje-redireccion').style.display = 'block';
     document.body.style.overflow = 'hidden'; // evita scroll en fondo
-    localStorage.setItem('paginaExpirada', 'true');
+    localStorage.setItem('paginaExpirada', 'false');
   };
 
   if (yaExpirado === 'true' || ahora >= fechaLimite) {
